@@ -1,9 +1,11 @@
 #include "MainWindow.h"
 #include "ui_MainWindow.h"
+#include <QMainWindow>
 
 #include <QTreeView>
 #include <QStandardItemModel>
 #include <QStandardItem>
+
 
 
 const QString kATitle = QString("PlistPad");
@@ -393,8 +395,10 @@ void MainWindow::on_actionExit_triggered()
 
 void MainWindow::on_action_About_triggered()
 {
-    AboutDialog dialog = AboutDialog(this);
-    dialog.exec();
+// About error ##
+//const AboutDialog dialog = AboutDialog(this);
+//dialog.exec();
+
 }
 
 void MainWindow::on_actionFind_Replace_triggered()
@@ -402,7 +406,8 @@ void MainWindow::on_actionFind_Replace_triggered()
     if  ( _findReplaceDialog == nullptr ) {
         _findReplaceDialog = new FindReplaceDialog(this);
         _findReplaceDialog->setModal(false);
-        connect(_findReplaceDialog, SIGNAL(doFindReplace(QString&,QString&,ReplaceTarget,ReplaceMode)), this, SLOT(treeViewFindReplace(QString&,QString&,ReplaceTarget,ReplaceMode)));
+        // error SIGNAL
+        //QObject::connect(_findReplaceDialog, SIGNAL(PlistTreeModel::doFindReplace(const QString&,const QString&,ReplaceTarget,ReplaceMode)), this, SLOT(MainWindow::treeViewFindReplace(const QString&,const QString&,ReplaceTarget,ReplaceMode)));
     }
 
     _findReplaceDialog->show();

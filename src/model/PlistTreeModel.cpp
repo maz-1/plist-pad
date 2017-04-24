@@ -271,7 +271,7 @@ int PlistTreeModel::findReplace(QString &find, QString &replace, ReplaceTarget t
 }
 
 
-int PlistTreeModel::doFindReplace(QModelIndex &idx, QString &find, QString &replace, ReplaceTarget target, ReplaceMode mode)
+int PlistTreeModel::doFindReplace(QModelIndex &idx, const QString &find, const QString &replace, ReplaceTarget target, ReplaceMode mode)
 {
     int count = 0;
     PlistTreeItem *item = itemAtIndex(idx);

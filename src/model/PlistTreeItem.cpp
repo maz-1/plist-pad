@@ -348,7 +348,7 @@ bool PlistTreeItem::shouldChildrenHaveKey() const
 }
 
 
-bool PlistTreeItem::isChildKeyValid(QString &aString, PlistTreeItem *ignoreItem) const
+bool PlistTreeItem::isChildKeyValid(const QString &aString, PlistTreeItem *ignoreItem) const
 {
     if ( aString.isNull() || aString.isEmpty() ) {
         return false;
@@ -365,7 +365,7 @@ bool PlistTreeItem::isChildKeyValid(QString &aString, PlistTreeItem *ignoreItem)
 }
 
 
-bool PlistTreeItem::setKey(QString &aString)
+bool PlistTreeItem::setKey(const QString &aString)
 {
     if ( !_parentItem || !_parentItem->shouldChildrenHaveKey() ) {
         _key = QString();

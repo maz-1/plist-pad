@@ -127,7 +127,7 @@ signals:
 public slots:
 
 protected:
-    int doFindReplace(QModelIndex &idx, QString &find, QString &replace, ReplaceTarget target, ReplaceMode mode);
+    int doFindReplace(QModelIndex &idx, const QString &find, const QString &replace, ReplaceTarget target, ReplaceMode mode);
 
 
 private:

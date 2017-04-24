@@ -24,13 +24,14 @@
 #include <QItemDelegate>
 #include <QtGui>
 #include <QComboBox>
+#include <QSize>
 
 class ComboBoxDelegate : public QItemDelegate
 {
     Q_OBJECT
 
 public:
-    ComboBoxDelegate(QStringList &values, QObject *parent = 0);
+    ComboBoxDelegate(const QStringList &values, QObject *parent = 0);
 
     QWidget *createEditor(QWidget *parent, const QStyleOptionViewItem &option, const QModelIndex &index) const;
     void setEditorData(QWidget *editor, const QModelIndex &index) const;

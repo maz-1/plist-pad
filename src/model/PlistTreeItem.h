@@ -120,10 +120,10 @@ public:
     bool shouldChildrenHaveKey() const;
 
     /** Is the provided key valid for this item? */
-    bool isChildKeyValid(QString &aString, PlistTreeItem *ignoreItem = nullptr) const;
+    bool isChildKeyValid(const QString &aString, PlistTreeItem *ignoreItem = nullptr) const;
 
     /** Set Key. */
-    bool setKey(QString &aString);
+    bool setKey(const QString &aString);
 
     /** Return the parent item. */
     PlistTreeItem *parent() const;

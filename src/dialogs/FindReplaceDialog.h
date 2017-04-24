@@ -45,7 +45,7 @@ public:
     ~FindReplaceDialog();
 
 signals:
-    void doFindReplace(QString &find, QString &replace, ReplaceTarget target = ReplaceAll, ReplaceMode mode = ReplaceModeNormal);
+    void doFindReplace(const QString &find, const QString &replace, ReplaceTarget target = ReplaceAll, ReplaceMode mode = ReplaceModeNormal);
 
     
 private slots:

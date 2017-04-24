@@ -1,6 +1,6 @@
 #include "ComboBoxDelegate.h"
 
-ComboBoxDelegate::ComboBoxDelegate(QStringList &values, QObject *parent) : QItemDelegate(parent)
+ComboBoxDelegate::ComboBoxDelegate(const QStringList &values, QObject *parent) : QItemDelegate(parent)
 {
     _values = values;
 }

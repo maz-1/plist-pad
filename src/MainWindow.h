@@ -94,6 +94,7 @@ private:
     Ui::MainWindow *ui;
 
     FindReplaceDialog *_findReplaceDialog;
+    AboutDialog *_AboutDialog;
 
     QString _openFileName;
     PlistTreeModel *_treeModel;

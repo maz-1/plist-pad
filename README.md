@@ -1,6 +1,15 @@
 # Plist Pad
 
-An easy-to-use Property List / Plist file editor for Windows, OSX and Linux.
+An easy-to-use Property List / Plist file editor for Windows, OSX and Linux.r
+
+# Plist Pad Fork
+
+Removed Find/Replace Window and About Window (error on compile process)
+Add const attr for compatibility with QT5 Linux
+
+## MAKE
+
+qmake ./PlistPad.pro -r -spec linux-g++ CONFIG+=c++11 && make 
 
 ## Introduction
 

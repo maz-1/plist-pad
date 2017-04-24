@@ -98,12 +98,18 @@
     <addaction name="action_Paste"/>
    </widget>
    <widget class="QMenu" name="menu_Tools">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="title">
      <string>&amp;Tools</string>
     </property>
     <addaction name="actionFind_Replace"/>
    </widget>
    <widget class="QMenu" name="menu_Help">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="title">
      <string>&amp;Help</string>
     </property>
